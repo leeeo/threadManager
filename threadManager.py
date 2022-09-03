@@ -40,8 +40,8 @@ if __name__ == '__main__':
     print('회차 누적값 소요시간(ms)')
 
     for _ in range(5):
-        totalCount = ThreadVariable()
         start = time.time()
+        totalCount = ThreadVariable()
 
         for _ in range(100):
             timerThread = CounterThread()
