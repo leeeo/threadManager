@@ -39,18 +39,19 @@ if __name__ == '__main__':
 
     print('회차 누적값 소요시간(ms)')
 
-    totalCount = ThreadVariable()
-    start = time.time()
+    for _ in range(5):
+        totalCount = ThreadVariable()
+        start = time.time()
 
-    for _ in range(100):
-        timerThread = CounterThread()
-        timerThread.start()
+        for _ in range(100):
+            timerThread = CounterThread()
+            timerThread.start()
 
-    mainThread = threading.currentThread()
-    for thread in threading.enumerate():
-        if thread is not mainThread:
-            thread.join()
+        mainThread = threading.currentThread()
+        for thread in threading.enumerate():
+            if thread is not mainThread:
+                thread.join()
 
-    end = time.time()
-    print(f'{round} ' + str(totalCount.lockedValue) + f' {int((end-start)*1000)}')
-    
+        end = time.time()
+        print(f'{round} ' + str(totalCount.lockedValue) + f' {int((end-start)*1000)}')
+        round += 1  
