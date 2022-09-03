@@ -12,9 +12,9 @@
 - 실행 속도 확인
 
 ## ToDo
-- [ ] API POST Method 확인 및 테스트
-- [ ] thread 테스트
-- [ ] 공유 변수 테스트
+- [x] API POST Method 확인 및 테스트
+- [x] thread 테스트
+- [x] 공유 변수 테스트
 - [ ] github 공유 방법 확인
 
 ## 추가 개선사항
