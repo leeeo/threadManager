@@ -17,6 +17,9 @@
 - [x] 공유 변수 테스트
 - [ ] github 공유 방법 확인
 
+## 결과
+<img width="194" alt="result" src="https://user-images.githubusercontent.com/12059825/188273831-f345207e-fcbe-4607-898a-454bc66cf319.png">
+
 ## 추가 개선사항
 - 재사용을 위한 모듈화
 - 평균 5500 값을 가져오며 약 10% 손실 발생
