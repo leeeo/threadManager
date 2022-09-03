@@ -15,7 +15,7 @@
 - [x] API POST Method 확인 및 테스트
 - [x] thread 테스트
 - [x] 공유 변수 테스트
-- [ ] github 공유 방법 확인
+- [x] github 공유 방법 확인
 
 ## 결과
 <img width="194" alt="result" src="https://user-images.githubusercontent.com/12059825/188273831-f345207e-fcbe-4607-898a-454bc66cf319.png">
