@@ -1,11 +1,9 @@
 import requests
 import json
-from queue import Queue
 import time
 import threading
 
 URL = "https://eai.mrcamel.co.kr/devops"
-que = Queue(100)
 
 class ThreadVariable():
     def __init__(self):
@@ -30,8 +28,7 @@ class CounterThread(threading.Thread):
         for _ in range(10):
             response = requests.post(URL)
             params = json.loads(response.text)
-            que.put(params['body']['value'])
-            totalCount.plus(que.get())
+            totalCount.plus(params['body']['value'])
 
 if __name__ == '__main__':
     global totalCount
@@ -54,4 +51,5 @@ if __name__ == '__main__':
 
         end = time.time()
         print(f'{round} ' + str(totalCount.lockedValue) + f' {int((end-start)*1000)}')
-        round += 1  
+        round += 1
+        time.sleep(1000)
