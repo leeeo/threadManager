@@ -3,7 +3,7 @@ import json
 import time
 import threading
 
-URL = "https://eai.mrcamel.co.kr/devops"
+URL = "url"
 
 class ThreadVariable():
     def __init__(self):
